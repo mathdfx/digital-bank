@@ -58,40 +58,40 @@ Variáveis de Ambiente: python-dotenv
 Para executar o projeto, você precisará de ter o Node.js (v18+) e o Python (v3.10+) instalados na sua máquina.
 
 1. Configuração do Backend
-# Navegue para a pasta do backend
+Navegue para a pasta do backend
 cd backend
 
-# Crie e ative um ambiente virtual
+Crie e ative um ambiente virtual
 python -m venv .venv
-# No Windows:
-# .venv\Scripts\activate
-# No macOS/Linux:
-# source .venv/bin/activate
+No Windows:
+.venv\Scripts\activate
+ No macOS/Linux:
+source .venv/bin/activate
 
-# Instale as dependências do Python
+Instale as dependências do Python
 pip install -r requirements.txt
 
-# Crie um ficheiro .env na raiz da pasta 'backend' com o seguinte conteúdo:
-# FLASK_ENV=development
-# SECRET_KEY=sua-chave-secreta-aqui
-# JWT_SECRET_KEY=sua-outra-chave-secreta-aqui
+Crie um ficheiro .env na raiz da pasta 'backend' com o seguinte conteúdo:
+FLASK_ENV=development
+SECRET_KEY=sua-chave-secreta-aqui
+JWT_SECRET_KEY=sua-outra-chave-secreta-aqui
 
-# Inicialize a base de dados (execute apenas uma vez)
+Inicialize a base de dados (execute apenas uma vez)
 flask init-db
 
-# Inicie o servidor do backend
+Inicie o servidor do backend
 flask run
 
 O servidor da API estará a correr em http://127.0.0.1:5000.
 
 2. Configuração do Frontend
-# Abra um novo terminal e navegue para a pasta do frontend
+Abra um novo terminal e navegue para a pasta do frontend
 cd frontend
 
-# Instale as dependências do Node.js
+ Instale as dependências do Node.js
 npm install
 
-# Inicie o servidor de desenvolvimento do frontend
+Inicie o servidor de desenvolvimento do frontend
 npm run dev
 
 A aplicação estará acessível em http://localhost:5173 (ou noutra porta indicada pelo Vite).
