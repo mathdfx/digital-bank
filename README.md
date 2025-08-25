@@ -1,4 +1,4 @@
-#BNJ Ilto - Carteira Digital Full-Stack
+BNJ Ilto - Carteira Digital Full-Stack
 
 📖 Sobre o Projeto
 
