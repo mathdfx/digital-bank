@@ -33,5 +33,6 @@
   "recipient": "Recipient",
   "amount": "Amount",
   "transfer_now": "Transfer Now",
-  "about": "About the Project"
+  "about": "About the Project",
+  "portfolio": "Portfolio"
 }

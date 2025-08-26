@@ -32,7 +32,7 @@ export const RegisterPage = () => {
         <div className="flex items-center justify-center min-h-screen bg-gray-100">
             <div className="w-full max-w-md p-8 space-y-8 bg-white rounded-2xl shadow-lg">
                 <div className="text-center">
-                    <h2 className="text-3xl font-bold text-gray-800">Criar Conta no C7 Bank</h2>
+                    <h2 className="text-3xl font-bold text-gray-800">Criar conta no BNJ Bank</h2>
                     <p className="mt-2 text-gray-500">Comece a sua jornada financeira connosco.</p>
                 </div>
             
@@ -50,7 +50,7 @@ export const RegisterPage = () => {
                                     required: 'O nome de utilizador é obrigatório.',
                                     minLength: { value: 3, message: 'O utilizador deve ter pelo menos 3 caracteres.' }
                                 })}
-                                className="w-full py-3 pl-10 pr-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500"
+                                className="w-full py-3 pl-10 pr-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500"
                             />
                         </div>
                         {errors.username && <p className="mt-1 text-xs text-red-600">{errors.username.message}</p>}
@@ -68,7 +68,7 @@ export const RegisterPage = () => {
                                     required: 'A senha é obrigatória.',
                                     minLength: { value: 6, message: 'A senha deve ter pelo menos 6 caracteres.' }
                                 })}
-                                className="w-full py-3 pl-10 pr-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500"
+                                className="w-full py-3 pl-10 pr-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500"
                             />
                         </div>
                         {errors.password && <p className="mt-1 text-xs text-red-600">{errors.password.message}</p>}
@@ -77,7 +77,7 @@ export const RegisterPage = () => {
                     <div>
                         <button
                             type="submit"
-                            className="w-full flex justify-center items-center gap-2 px-4 py-3 font-semibold text-white bg-purple-600 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 transition-all">
+                            className="w-full flex justify-center items-center gap-2 px-4 py-3 font-semibold text-white bg-green-600 rounded-lg hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-all">
                             <LogIn size={20} />
                             Registar
                         </button>
@@ -86,7 +86,7 @@ export const RegisterPage = () => {
 
                 <p className="text-sm text-center text-gray-500">
                     Já tem uma conta?{' '}
-                    <Link to="/auth/login" className="font-medium text-purple-600 hover:underline">
+                    <Link to="/auth/login" className="font-medium text-green-600 hover:underline">
                         Faça login
                     </Link>
                 </p>

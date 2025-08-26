@@ -33,5 +33,6 @@
   "recipient": "Destinatário",
   "amount": "Valor",
   "transfer_now": "Transferir Agora",
-  "about": "Sobre o Projeto"
+  "about": "Sobre o Projeto",
+  "carteira": "Carteira"
 }

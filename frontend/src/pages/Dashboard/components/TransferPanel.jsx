@@ -30,35 +30,47 @@ export const TransferPanel = () => {
             <h2 className="text-xl font-bold text-white mb-4">{t('quick_transfer')}</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                 <div>
-                    <label className="text-xs font-medium text-gray-400">{t('recipient')}</label>
-                    <div className="relative mt-1">
-                        <User className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                    <label className="text-sm font-medium text-gray-300 block mb-2">{t('recipient')}</label>
+                    <div className="relative">
+                        <User className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
                         <input
                             type="text"
                             placeholder="username"
                             {...register('recipient', { required: 'O destinatário é obrigatório.' })}
-                            className="w-full bg-gray-700 text-white py-2 pl-9 pr-3 border border-gray-600 rounded-lg focus:ring-purple-500 focus:border-purple-500 text-sm"
+                            className="w-full bg-gray-800 text-white py-3 pl-10 pr-3 border border-gray-700 rounded-xl focus:ring-purple-500 focus:border-purple-500 focus:outline-none transition-colors"
                         />
                     </div>
+                    {errors.recipient && (
+                        <p className="mt-1 text-xs text-red-400">{errors.recipient.message}</p>
+                    )}
                 </div>
+                
                 <div>
-                    <label className="text-xs font-medium text-gray-400">{t('amount')}</label>
-                    <div className="relative mt-1">
-                        <DollarSign className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                    <label className="text-sm font-medium text-gray-300 block mb-2">{t('amount')}</label>
+                    <div className="relative">
+                        <DollarSign className="w-5 h-5 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
                         <input
                             type="number"
                             step="0.01"
                             placeholder="0.00"
-                            {...register('amount', { required: 'O valor é obrigatório.', valueAsNumber: true, min: { value: 0.01, message: 'O valor mínimo é 0.01.' } })}
-                            className="w-full bg-gray-700 text-white py-2 pl-9 pr-3 border border-gray-600 rounded-lg focus:ring-purple-500 focus:border-purple-500 text-sm"
+                            {...register('amount', { 
+                                required: 'O valor é obrigatório.', 
+                                valueAsNumber: true, 
+                                min: { value: 0.01, message: 'O valor mínimo é 0.01.' } 
+                            })}
+                            className="w-full bg-gray-800 text-white py-3 pl-10 pr-3 border border-gray-700 rounded-xl focus:ring-purple-500 focus:border-purple-500 focus:outline-none transition-colors"
                         />
                     </div>
+                    {errors.amount && (
+                        <p className="mt-1 text-xs text-red-400">{errors.amount.message}</p>
+                    )}
                 </div>
+                
                 <button
                     type="submit"
-                    className="w-full flex justify-center items-center gap-2 px-4 py-2 font-semibold text-white bg-purple-600 rounded-lg hover:bg-purple-700 transition-all"
+                    className="w-full flex justify-center items-center gap-2 px-4 py-3 font-semibold text-white bg-purple-600 rounded-xl hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all"
                 >
-                    <Send size={16} />
+                    <Send size={18} />
                     {t('transfer_now')}
                 </button>
             </form>
