@@ -107,4 +107,4 @@ npm install
 Inicie o servidor de desenvolvimento do frontend
 npm run dev
 
-A aplicação estará acessível em http://localhost:5173 (ou noutra porta indicada pelo Vite).
+A aplicação estará acessível em http://localhost:5173 (ou em outra porta indicada pelo Vite).
