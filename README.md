@@ -1,8 +1,8 @@
-BNJ Ilto - Carteira Digital Full-Stack
+BNJ Bank - Carteira Digital Full-Stack
 
 📖 Sobre o Projeto
 
-O BNJ Ilto é uma aplicação web completa de uma carteira digital, desenvolvida com o objetivo de simular um ambiente bancário moderno. A plataforma permite que os utilizadores criem uma conta, façam login de forma segura, consultem os seus saldos, realizem transferências para outros utilizadores e negociem diferentes moedas digitais, tudo numa interface limpa, reativa e inspirada nos melhores designs de fintechs do mercado.
+O BNJ Bank é uma aplicação web completa de uma carteira digital, desenvolvida com o objetivo de simular um ambiente bancário moderno. A plataforma permite que os utilizadores criem uma conta, façam login de forma segura, consultem os seus saldos, realizem transferências para outros utilizadores e negociem diferentes moedas digitais, tudo numa interface limpa, reativa e inspirada nos melhores designs de fintechs do mercado.
 
 Este projeto foi construído como um portfólio para demonstrar competências em desenvolvimento full-stack, utilizando tecnologias modernas tanto no frontend (React) como no backend (Flask).
 
