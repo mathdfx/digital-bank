@@ -34,5 +34,6 @@
   "amount": "Amount",
   "transfer_now": "Transfer Now",
   "about": "About the Project",
-  "portfolio": "Portfolio"
+  "portfolio": "Portfolio",
+  "wallet" : "Wallet"
 }

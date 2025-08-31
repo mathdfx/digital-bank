@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 const navItems = [
     { icon: <Home size={22} />, label: 'dashboard', path: '/', color: 'bg-blue-50 text-blue-600' },
-    { icon: <Wallet size={22} />, label: 'carteira', path: '/carteira', color: 'bg-green-50 text-green-600' },
+    { icon: <Wallet size={22} />, label: 'wallet', path: '/carteira', color: 'bg-green-50 text-green-600' },
     { icon: <CandlestickChart size={22} />, label: 'trade', path: '/negociar', color: 'bg-orange-50 text-orange-600' },
     { icon: <Info size={22} />, label: 'about', path: '/sobre', color: 'bg-purple-50 text-purple-600' },
 ];
